@@ -26,7 +26,7 @@ try:
     cnx = mysql.connector.connect(
         host="localhost",
         user="root",
-        password="Nikhil@2008",
+         password=os.getenv("DB_PASSWORD")
         database="Hospital_management"
     )
 
