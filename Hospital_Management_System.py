@@ -18,7 +18,7 @@ st.sidebar.caption("Developed by Nikhil")
 
 page = st.sidebar.radio(
     "Menu",
-    ["Home", "Patients", "Doctors", "Appointments", "Billing"]
+    ["Home", "Patients", "Doctors", "Appointments", "Billing","Search Patient"]
 )
 #connecting to the database
 # Connecting to the database
@@ -26,7 +26,7 @@ try:
     cnx = mysql.connector.connect(
         host="localhost",
         user="root",
-         password=os.getenv("DB_PASSWORD")
+        password=os.getenv("DB_PASSWORD"),
         database="Hospital_management"
     )
 
